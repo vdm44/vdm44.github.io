@@ -4,14 +4,19 @@
   <meta charset="utf-8">
   
   
-  <title>Hexo</title>
+  <title>typescript-alias-plugin | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://vdm44.github.io/index.html">
+  <meta name="description" content="tsc编译时无法转换路径别名的问题在tsconfig里使用paths来配置路径别名，使用tsc编译之后的文件里没有转换成正确的路径。可以使用tsc-alias这个包 1npm install tsc-alias -D 需要配合tsc来使用，先用tsc编译，再用tsc-alias来转换路径别名 推荐用concurrently来同时开启tsc和tsc-alias 1npm install concur">
+<meta property="og:type" content="article">
+<meta property="og:title" content="typescript-alias-plugin">
+<meta property="og:url" content="http://vdm44.github.io/2024/09/27/typescript-alias-plugin/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="tsc编译时无法转换路径别名的问题在tsconfig里使用paths来配置路径别名，使用tsc编译之后的文件里没有转换成正确的路径。可以使用tsc-alias这个包 1npm install tsc-alias -D 需要配合tsc来使用，先用tsc编译，再用tsc-alias来转换路径别名 推荐用concurrently来同时开启tsc和tsc-alias 1npm install concur">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-09-26T19:58:14.000Z">
+<meta property="article:modified_time" content="2024-09-26T20:07:46.353Z">
 <meta property="article:author" content="vdm44">
+<meta property="article:tag" content="typescript">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -67,9 +72,7 @@
 </header>
 
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-typescript-alias-plugin" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-typescript-alias-plugin" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2024/09/27/typescript-alias-plugin/" class="article-date">
   <time class="dt-published" datetime="2024-09-26T19:58:14.000Z" itemprop="datePublished">2024-09-27</time>
@@ -82,8 +85,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2024/09/27/typescript-alias-plugin/">typescript-alias-plugin</a>
+    <h1 class="p-name article-title" itemprop="headline name">
+      typescript-alias-plugin
     </h1>
   
 
@@ -112,56 +115,19 @@
     </footer>
   </div>
   
-</article>
-
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-gta5-iders" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2024/09/27/gta5-iders/" class="article-date">
-  <time class="dt-published" datetime="2024-09-26T17:08:59.000Z" itemprop="datePublished">2024-09-27</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2024/09/27/gta5-iders/">gta5-ideas</a>
-    </h1>
+    <a href="/2024/09/27/gta5-iders/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">gta5-ideas</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="GTA5服务器内容玩法记录"><a href="#GTA5服务器内容玩法记录" class="headerlink" title="GTA5服务器内容玩法记录"></a>GTA5服务器内容玩法记录</h1><p>记录一些gta5服务器玩法的点子</p>
-<h2 id="服务器名称"><a href="#服务器名称" class="headerlink" title="服务器名称"></a>服务器名称</h2><p>服务器名称已经有两个想好了的</p>
-<p>一个叫Framework，中文不知道用啥比较合适，直接就叫框架的话感觉怪怪的。</p>
-<p>另外一个叫Lighthouse，中文叫灯塔就很不错。</p>
-<p>两个名字都出自神盾局特工里，Framework好像是一个博士为了见到自己的妻子，做出来的一个虚拟世界。Lighthouse呢就是后面几季的主要场景。如果做多个服务器的话，Framework可能是自由服，赛车服之类的，Lighthouse的话就是娱乐服。</p>
-<h2 id="玩法"><a href="#玩法" class="headerlink" title="玩法"></a>玩法</h2><h3 id="警匪扮演玩法"><a href="#警匪扮演玩法" class="headerlink" title="警匪扮演玩法"></a>警匪扮演玩法</h3><p>这个玩法一般的rpg或者rp服务器里很受欢迎，国外不知道，国内感觉大部分玩家很喜欢这个。我是对这个玩法不太感冒的，不过最近想到了一个点子。</p>
-<h4 id="内容"><a href="#内容" class="headerlink" title="内容"></a>内容</h4><p>玩家在击杀其他玩家后会变成通缉犯。任何玩家都可以扮演警察，在特定地点（比如警察局）领取武器，一个设备（暂定是一个平板），然后打开平板后可以显示所有通缉犯的列表，选择一个通缉犯后会在地图上显示blip，警察可以就可以抓通缉犯，在捉拿或者击杀通缉犯后，可以获得奖励，被抓或者被击杀的通缉犯交罚款，然后赔偿给他击杀的玩家的补偿</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://vdm44.github.io/2024/09/27/gta5-iders/" data-id="cm1jjuh9k0000y0uy2z8rgzqh" data-title="gta5-ideas" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-
-  
 
 
 </section>
